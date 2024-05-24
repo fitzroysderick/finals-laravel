@@ -34,11 +34,13 @@
         @include('layouts.header')
             @include('layouts.sidebar')
 
-
-
             <!-- Page Content -->
-            <main>{{ $slot }}</main>
+            <main id="main" class="main">
+                {{ $slot }}
+            </main>
+
             @include('layouts.footer')
+            
         </div>
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
